@@ -23,13 +23,7 @@ const hasSpecialPermission = true
 const hasTemporaryPass = false
 
 let isAccess = (isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass)
-    if (isAccess === true) {
-        alert("Welcome");
-    } else {
-        alert("access denied")
-    }
-
-
+console.log(isAccess);
 
 
 

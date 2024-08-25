@@ -8,11 +8,47 @@
 */
 
 // тестовые данные (значения можно менять)
-const isAdmin = false
-const isVerifiedUser = true
+// const isAdmin = false
+// const isVerifiedUser = true
+// const hasSpecialPermission = true
+// const hasTemporaryPass = false
+
+// let isAccess
+
+// your code
+
+const isAdmin = false  
+const isVerifiedUser = true 
 const hasSpecialPermission = true
 const hasTemporaryPass = false
 
-let isAccess
+let isAccess = (isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass)
+    if (isAccess === true) {
+        alert("Welcome");
+    } else {
+        alert("access denied")
+    }
 
-// your code
+
+
+
+
+
+
+
+// const user = (isAdmin, isVerifiedUser, hasSpecialPermission, hasTemporaryPass)
+
+// let isAccess
+
+// if (user === isAdmin || user === isVerifiedUser) {
+//     if (user === hasSpecialPermission || user === hasTemporaryPass) {
+//         // alert("Access allowed")
+//         isAccess = user
+//         console.log("Access allowed");
+        
+//     }
+// } else  {
+//     // alert("No access")
+//     console.log("No access");
+    
+// }

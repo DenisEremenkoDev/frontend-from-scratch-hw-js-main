@@ -22,10 +22,17 @@ const isVerifiedUser = true
 const hasSpecialPermission = true
 const hasTemporaryPass = false
 
-let isAccess = false
+let isAccess
 
-if (isAccess === isAdmin || isAccess === isVerifiedUser) {
-    if (isAccess === hasSpecialPermission || isAccess === hasTemporaryPass) {
-        isAccess = true
-    }
+// if (isAccess === isAdmin || isAccess === isVerifiedUser) {
+//     if (isAccess === hasSpecialPermission || isAccess === hasTemporaryPass) {
+//         isAccess = true
+//     }
+// }
+
+
+if ((isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass)) {
+    isAccess = true
+} else {
+    isAccess = false
 }

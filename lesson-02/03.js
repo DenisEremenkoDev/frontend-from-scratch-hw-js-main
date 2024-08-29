@@ -11,7 +11,7 @@ let grade = 0
 if (score > 0 && score <= 49) {
     grade = 'F'
     // console.log(grade);
-    } if (score >= 50 && score <= 69) {
+    if (score >= 50 && score <= 69) {
         grade = 'D'
         // console.log(grade);
         } if (score >= 70 && score <= 79) {
@@ -24,7 +24,7 @@ if (score > 0 && score <= 49) {
                             grade = 'A'
                             // console.log(grade);
                         } 
-
+} 
 // "F" = (0 - 49)
 // "D" = (50 - 69)
 // "C" = (70 - 79)

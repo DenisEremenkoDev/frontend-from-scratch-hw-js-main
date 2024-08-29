@@ -5,25 +5,25 @@
  */
 
 const score = 70 // тестовое значение, можно изменять
-let grade = 0
+let grade 
 // your code
 
-// if (score > 0 && score <= 49) {
-//     grade = 'F'
-//     // console.log(grade);
-//     } else if (score >= 50 && score <= 69) {
-//         grade = 'D'
-//         // console.log(grade);
-//         } else if (score >= 70 && score <= 79) {
-//             grade = 'C'
-//             // console.log(grade);
-//             } else if (score >= 80 && score <= 89) {
-//                     grade = 'B'
-//                     // console.log(grade);
-//                     } else if (score >= 90 && score <= 100) {
-//                             grade = 'A'
-//                             // console.log(grade);
-//                         } 
+if (score > 0 && score <= 49) {
+    grade = 'F'
+    // console.log(grade);
+    } else if (score >= 50 && score <= 69) {
+        grade = 'D'
+        // console.log(grade);
+        } else if (score >= 70 && score <= 79) {
+            grade = 'C'
+            // console.log(grade);
+            } else if (score >= 80 && score <= 89) {
+                    grade = 'B'
+                    // console.log(grade);
+                    } else if (score >= 90 && score <= 100) {
+                            grade = 'A'
+                            }
+console.log(grade);
 
 // "F" = (0 - 49)
 // "D" = (50 - 69)
@@ -33,14 +33,14 @@ let grade = 0
 
 
 
-if (grade = score > 0 && score <= 49) {
-    console.log('F');
-    } else if ( grade = score >= 50 && score <= 69) {
-        console.log('D');
-        } else if (grade = score >= 70 && score <= 79) {
-            console.log('C');
-            } else if (grade = score >= 80 && score <= 89) {
-                    console.log('B');
-                    } else if (grade = score >= 90 && score <= 100) {
-                            console.log('A');
-                        } 
+// if (grade = score > 0 && score <= 49) {
+//     // console.log('F');
+//     } else if ( grade = score >= 50 && score <= 69) {
+//         // console.log('D');
+//         } else if (grade = score >= 70 && score <= 79) {
+//             // console.log('C');
+//             } else if (grade = score >= 80 && score <= 89) {
+//                     // console.log('B');
+//                     } else if (grade = score >= 90 && score <= 100) {
+//                             // console.log('A');
+//                         } 

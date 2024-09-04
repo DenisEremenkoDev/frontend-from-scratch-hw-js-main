@@ -4,7 +4,7 @@
  * Результат сохраните в переменной grade.
  */
 
-const score = 50 // тестовое значение, можно изменять
+const score = 70 // тестовое значение, можно изменять
 let grade = Math.floor(Math.random()*101)
 // your code
 
@@ -13,7 +13,7 @@ if (score >= 0 && score <= 49) {
 }else if (score >= 50 && score <= 69){
     grade = "D"
 }else if (score >= 70 && score <= 79){
-    grade = "C"
+        grade = "C"
 }else if (score >= 80 && score <= 89){
     grade = "B"
 } else{

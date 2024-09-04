@@ -4,44 +4,20 @@
  * Результат сохраните в переменной grade.
  */
 
-const score = 70 // тестовое значение, можно изменять
-let grade 
+const score = 50 // тестовое значение, можно изменять
+let grade = Math.floor(Math.random()*101)
 // your code
 
+if (score >= 0 && score <= 49) {
+    grade = "F"
+}else if (score >= 50 && score <= 69){
+    grade = "D"
+}else if (score >= 70 && score <= 79){
+    grade = "C"
+}else if (score >= 80 && score <= 89){
+    grade = "B"
+} else{
+    grade = "A"
+}
 
-
-if (score > 0 && score <= 49) {
-    grade = F
-    } else if (score >= 50 && score <= 69) {
-        grade = D
-        } else if (score >= 70 && score <= 79) {
-            grade = C
-            } else if (score >= 80 && score <= 89) {
-                    grade = B
-                    } else if (score >= 90 && score <= 100) {
-                        grade = A
-                        } 
-                            else {
-                                console.log("incorrect input");
-                                }
 console.log(grade);
-
-// "F" = (0 - 49)
-// "D" = (50 - 69)
-// "C" = (70 - 79)
-// "B" = (80 - 89)
-// "A" = (90 - 100 )
-
-
-
-// if (grade = score > 0 && score <= 49) {
-//     // console.log('F');
-//     } else if ( grade = score >= 50 && score <= 69) {
-//         // console.log('D');
-//         } else if (grade = score >= 70 && score <= 79) {
-//             // console.log('C');
-//             } else if (grade = score >= 80 && score <= 89) {
-//                     // console.log('B');
-//                     } else if (grade = score >= 90 && score <= 100) {
-//                             // console.log('A');
-//                         } 

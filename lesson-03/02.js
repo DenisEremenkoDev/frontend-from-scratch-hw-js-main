@@ -9,8 +9,7 @@ function isEven(number) {
     }
 }
 const resultNumber = isEven(-1)
-// console.log(resultNumber);
-
+console.log(resultNumber);
 
 
 

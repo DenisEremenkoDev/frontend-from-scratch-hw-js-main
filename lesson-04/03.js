@@ -26,24 +26,24 @@ function includesElement(array, element) {
     return false; // не найден false
 }
 
-
 function findCommonElements(array1, array2) {
-        let commonElements = [];  // Массив для хранения общих элементов
-        for (let i = 0; i < array1.length; i++) {
-            // Проверяем, содержится ли элемент array1[i] в array2
-            if (includesElement(array2, array1[i]) && !includesElement(commonElements, array1[i])) {
-                commonElements.push(array1[i]);
-            }
+    let commonElements = [];  // Массив для хранения общих элементов
+
+    for (let i = 0; i < array1.length; i++) {
+        // Проверяем, содержится ли элемент array1[i] в array2
+        if (includesElement(array2, array1[i]) && !includesElement(commonElements, array1[i])) {
+            commonElements.push(array1[i]);
         }
-        return commonElements;
-    
-    
+    }
+
+    return commonElements;
 }
+
+
 // array1: [1, 2, 3, 4]
 // array2: [2, 3, 5, 6]
+// console.log(findCommonElements([1, 2, 3], [5, 7, 4]));
 
-// // expected: [2, 3]
-console.log(findCommonElements([1, 2, 3], [4, 5, 6]));
 
 
 

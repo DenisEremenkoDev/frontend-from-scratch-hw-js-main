@@ -16,9 +16,13 @@
 */
 
 function findUniqueElements(array) {
-    let uniqueItems = [...new Set(array)]
-    console.log(uniqueItems);
+    for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+        
+    }
 }
 
+
 findUniqueElements([1, 2, 3, 2, 1, 4])
+includesElement()
 

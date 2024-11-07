@@ -26,34 +26,18 @@ function includesElement(array, element) {
     return false; // не найден false
 }
 
+
 function findCommonElements(array1, array2) {
     let commonElements = [];  // Массив для хранения общих элементов
-
+    // Проходим по каждому элементу первого массива
     for (let i = 0; i < array1.length; i++) {
-        // Проверяем, содержится ли элемент array1[i] в array2
+        // Проверяем, содержится ли элемент array1[i] в array2 и не добавлен ли он уже в commonElements
         if (includesElement(array2, array1[i]) && !includesElement(commonElements, array1[i])) {
             commonElements.push(array1[i]);
         }
     }
-
-    return commonElements;
+    return commonElements;  // Вернём массив общих элементов (либо пустой, если совпадений нет)
 }
+console.log(findCommonElements([1, 2, 3], [2, 3, 4]));
 
 
-// array1: [1, 2, 3, 4]
-// array2: [2, 3, 5, 6]
-// console.log(findCommonElements([1, 2, 3], [5, 7, 4]));
-
-
-
-
-
-// const intersection = (array1, array2) => {
-//     let result = [];
-//     for (let i = 0; i < array1.length; i++) {
-//       if (array2.includes(array1[i])) {
-//         result.push(array1[i]);
-//       }
-//     }
-//     return result;
-//   }

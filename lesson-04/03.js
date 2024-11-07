@@ -17,27 +17,30 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 
+// Функция для проверки наличия элемента в массиве
 function includesElement(array, element) {
     for (let i = 0; i < array.length; i++) {
         if (array[i] === element) {
-            return true; // найден true
+            return true; // Элемент найден, возвращаем true
         }
     }
-    return false; // не найден false
+    return false; // Элемент не найден, возвращаем false
 }
 
-
+// Функция для поиска общих элементов между двумя массивами
 function findCommonElements(array1, array2) {
     let commonElements = [];  // Массив для хранения общих элементов
+
     // Проходим по каждому элементу первого массива
     for (let i = 0; i < array1.length; i++) {
-        // Проверяем, содержится ли элемент array1[i] в array2 и не добавлен ли он уже в commonElements
+        // Проверяем, содержится ли элемент array1[i] в array2
+        // и не добавлен ли он уже в commonElements
         if (includesElement(array2, array1[i]) && !includesElement(commonElements, array1[i])) {
             commonElements.push(array1[i]);
         }
     }
-    return commonElements;  // Вернём массив общих элементов (либо пустой, если совпадений нет)
+
+    return commonElements;  // Вернём массив общих элементов (или пустой массив, если совпадений нет)
 }
-console.log(findCommonElements([1, 2, 3], [2, 3, 4]));
 
 

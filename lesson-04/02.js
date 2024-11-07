@@ -24,7 +24,6 @@ function includesElement(array, element) {
     return false;
 }
 
-
 function findUniqueElements(array) {
     let uniqueArray = [];
     for (let i = 0; i < array.length; i++) {

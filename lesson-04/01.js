@@ -17,11 +17,11 @@ includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 function includesElement(array, element) {
     for (let i = 0; i < array.length; i++) {
         if (array[i] === element) {
-            return true; // Если элемент найден, возвращаем true
+            return true; // найден true
         }
     }
-    return false; // Если элемент не найден, возвращаем false
+    return false; // не найден false
 }
 
-console.log(includesElement([1, 2, 3], 2)); // true
-console.log(includesElement([1, 2, 3], 4)); // false
+// console.log(includesElement([1, 2, 3], 2)); // true
+// console.log(includesElement([1, 2, 3], 4)); // false

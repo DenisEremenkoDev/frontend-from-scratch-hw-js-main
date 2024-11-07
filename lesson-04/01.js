@@ -22,6 +22,5 @@ function includesElement(array, element) {
     }
     return false; // не найден false
 }
-
 // console.log(includesElement([1, 2, 3], 2)); // true
 // console.log(includesElement([1, 2, 3], 4)); // false

@@ -23,4 +23,7 @@ const game = {
         console.log("Invalid resource");
       }
     }
+    
 }
+
+

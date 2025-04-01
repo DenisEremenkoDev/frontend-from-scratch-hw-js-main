@@ -7,3 +7,6 @@
 
 // your code
 let factorial
+
+
+//тест

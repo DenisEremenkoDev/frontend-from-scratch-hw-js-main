@@ -9,15 +9,7 @@ function findLargest(num1, num2, num3) {
         return num3
     }
 
-
-
-
-
 }
-
-
-
-
 
 findLargest(4, 6, 3)
 console.log(findLargest(4, 6, 3));

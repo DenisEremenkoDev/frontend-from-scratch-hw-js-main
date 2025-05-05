@@ -25,4 +25,9 @@ function doubleEachCharacter(str) {
 
 
 
-console.log(doubleEachCharacter('Hello'));
+// console.log(doubleEachCharacter('Hello'));
+
+
+
+
+

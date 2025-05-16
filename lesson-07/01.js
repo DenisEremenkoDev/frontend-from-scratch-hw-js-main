@@ -9,7 +9,6 @@
 
 function capitalizeWords(str) {
   if (str === "") return str
-
   let result = ""
   let needCapitalize = true
   for (let i = 0; i < str.length; i++) {
@@ -28,7 +27,7 @@ function capitalizeWords(str) {
 
 
 
-console.log(capitalizeWords("hello world from javascript"));
+// console.log(capitalizeWords("hello world from javascript"));
 
 
 

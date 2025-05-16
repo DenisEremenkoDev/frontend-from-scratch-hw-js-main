@@ -23,21 +23,21 @@ const next = document.getElementById("next-button");             // кнопка
 const imgButton = document.getElementById("web-tech-image")     // картинка
 
 
-
+// функция записанна с помощью выражения
 const createSlider = (() => {
-  let index = 0;
-  imgButton.src = WEB_TECH_IMAGES[index];
-  return {
+  let index = 0;                            // установили счётчик
+  imgButton.src = WEB_TECH_IMAGES[index];   // начальный путь картинки
+  return {      // возвращаем вызваное значение
     next() {
-      index = (index + 1) % WEB_TECH_IMAGES.length;
+      index = (index + 1) % WEB_TECH_IMAGES.length; // +1 и обнуляем при достежении конца массива
       imgButton.src = WEB_TECH_IMAGES[index];
     },
     prev() {
-      index = (index - 1 + WEB_TECH_IMAGES.length) % WEB_TECH_IMAGES.length
+      index = (index - 1 + WEB_TECH_IMAGES.length) % WEB_TECH_IMAGES.length // -1 и циклим в обратную сторону
       imgButton.src = WEB_TECH_IMAGES[index];
     }
   };
-})(); // () - вызывает 
+})(); // () - вызывает немедленный вызов функции
 
-next.addEventListener("click", createSlider.next)
-prev.addEventListener("click", createSlider.prev)
+next.addEventListener("click", createSlider.next) // вещаем кликер на нужные кнопки по id
+prev.addEventListener("click", createSlider.prev) // 
